@@ -1,0 +1,11 @@
+<!ENTITY redirectcleaner.about.developer "Developer:">
+<!ENTITY redirectcleaner.about.support "Support:">
+<!ENTITY redirectcleaner.about.license "License:">
+<!ENTITY redirectcleaner.about.donation "Donation:">
+<!ENTITY redirectcleaner.history.history "History">
+<!ENTITY redirectcleaner.history.original "Original Link">
+<!ENTITY redirectcleaner.history.clean "Clean Link">
+<!ENTITY redirectcleaner.options.mode "Mode">
+<!ENTITY redirectcleaner.options.whitelist "Whitelist">
+<!ENTITY redirectcleaner.options.blacklist "Blacklist">
+<!ENTITY redirectcleaner.options.regexp "Regular Expression">

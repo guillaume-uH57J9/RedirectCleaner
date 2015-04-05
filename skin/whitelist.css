@@ -1,0 +1,76 @@
+@-moz-document url("chrome://browser/content/browser.xul") {
+	
+	#redirectcleaner-toolbarbutton {
+		list-style-image: url("chrome://redirectcleaner/skin/whitelist32.png") !important;
+		-moz-image-region: rect(0px, 32px, 32px, 0px) !important;
+	}
+	
+	#redirectcleaner-toolbarbutton.highlight {
+		list-style-image: url("chrome://redirectcleaner/skin/whitelist32.png") !important;
+		-moz-image-region: rect(0px, 64px, 32px, 32px) !important;
+	}
+	
+	toolbar[iconsize="large"] #redirectcleaner-toolbarbutton {
+		list-style-image: url("chrome://redirectcleaner/skin/whitelist24.png") !important;
+		-moz-image-region: rect(0px, 24px, 24px, 0px) !important;
+	}
+	
+	toolbar[iconsize="large"] #redirectcleaner-toolbarbutton.highlight {
+		list-style-image: url("chrome://redirectcleaner/skin/whitelist24.png") !important;
+		-moz-image-region: rect(0px, 48px, 24px, 24px) !important;
+	}
+	
+	toolbar[iconsize="small"] #redirectcleaner-toolbarbutton {
+		list-style-image: url("chrome://redirectcleaner/skin/whitelist16.png") !important;
+		-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+	}
+	
+	toolbar[iconsize="small"] #redirectcleaner-toolbarbutton.highlight {
+		list-style-image: url("chrome://redirectcleaner/skin/whitelist16.png") !important;
+		-moz-image-region: rect(0px, 32px, 16px, 16px) !important;
+	}
+	
+}
+
+@-moz-document url("chrome://navigator/content/navigator.xul") {
+	
+	#redirectcleaner-toolbarbutton {
+		list-style-image: url("chrome://redirectcleaner/skin/whitelist32.png") !important;
+		-moz-image-region: rect(0px, 32px, 32px, 0px) !important;
+	}
+	
+	#redirectcleaner-toolbarbutton.highlight {
+		list-style-image: url("chrome://redirectcleaner/skin/whitelist32.png") !important;
+		-moz-image-region: rect(0px, 64px, 32px, 32px) !important;
+	}
+	
+	toolbar[iconsize="large"] #redirectcleaner-toolbarbutton {
+		list-style-image: url("chrome://redirectcleaner/skin/whitelist24.png") !important;
+		-moz-image-region: rect(0px, 24px, 24px, 0px) !important;
+	}
+	
+	toolbar[iconsize="large"] #redirectcleaner-toolbarbutton.highlight {
+		list-style-image: url("chrome://redirectcleaner/skin/whitelist24.png") !important;
+		-moz-image-region: rect(0px, 48px, 24px, 24px) !important;
+	}
+	
+	toolbar[iconsize="small"] #redirectcleaner-toolbarbutton {
+		list-style-image: url("chrome://redirectcleaner/skin/whitelist16.png") !important;
+		-moz-image-region: rect(0px, 16px, 16px, 0px) !important;
+	}
+	
+	toolbar[iconsize="small"] #redirectcleaner-toolbarbutton.highlight {
+		list-style-image: url("chrome://redirectcleaner/skin/whitelist16.png") !important;
+		-moz-image-region: rect(0px, 32px, 16px, 16px) !important;
+	}
+	
+}
+
+@-moz-document url("chrome://global/content/customizeToolbar.xul") {
+	
+	#redirectcleaner-toolbarbutton {
+		list-style-image: url("chrome://redirectcleaner/skin/whitelist32.png") !important;
+		-moz-image-region: rect(0px, 32px, 32px, 0px) !important;
+	}
+	
+}

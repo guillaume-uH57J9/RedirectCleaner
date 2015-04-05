@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://redirectcleaner/locale/redirectcleaner.dtd">
+
+<dialog
+	id="redirectcleaner"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	title="RedirectCleaner"
+	buttons="help"
+	ondialogaccept=""
+	ondialogcancel=""
+	ondialoghelp="help()"
+	onload=""
+	style="background: white;">
+	
+	<script type="application/x-javascript">
+		<![CDATA[
+		function help() {
+			
+			window.openDialog("chrome://redirectcleaner/content/about.xul", "_blank", "chrome,dialog,modal,centerscreen", null);
+			
+		}
+		]]>
+	</script>
+	
+	<listbox
+		id="redirectcleaner-listbox"
+		label="&redirectcleaner.history.history;"
+		style="min-height: 250px; max-height: 250px;">
+		
+		<listhead>
+			<listheader label="&redirectcleaner.history.original;" />
+			<listheader label="&redirectcleaner.history.clean;" />
+		</listhead>
+		
+		<listcols>
+			<listcol style="min-width: 400px; max-width: 400px;" />
+			<listcol style="min-width: 400px; max-width: 400px;" />
+		</listcols>
+		
+	</listbox>
+	
+</dialog>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://redirectcleaner/locale/redirectcleaner.dtd">
+
+<dialog
+	id="redirectcleaner"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	title="RedirectCleaner"
+	buttons="accept"
+	ondialogaccept=""
+	ondialogcancel=""
+	ondialoghelp=""
+	onload="">
+	
+	<hbox><label value="RedirectCleaner" style="font-size: 150%; font-weight: bold;" /></hbox>
+	<hbox><label value="RedirectCleaner cleans Redirects from Links" /></hbox>
+	
+	<separator/>
+	
+	<hbox><label value="&redirectcleaner.about.developer;" style="font-weight: bold;" /></hbox>
+	<hbox><label value="Thomas Hubbler" /></hbox>
+	
+	<separator/>
+	
+	<hbox><label value="&redirectcleaner.about.support;" style="font-weight: bold;" /></hbox>
+	<hbox><label value="https://github.com/RedirectCleaner/RedirectionCleaner" href="https://github.com/RedirectCleaner/RedirectionCleaner" class="text-link" /></hbox>
+	<hbox><label value="fanchor@gmx.at" href="mailto:fanchor@gmx.at" class="text-link" /></hbox>
+	
+	<separator/>
+	
+	<hbox><label value="&redirectcleaner.about.license;" style="font-weight: bold;" /></hbox>
+	<hbox><label value="GNU General Public License, Version 3.0" href="http://www.gnu.org/licenses/gpl-3.0.html" class="text-link" /></hbox>
+	
+	<separator/>
+	
+	<hbox><label value="&redirectcleaner.about.donation;" style="font-weight: bold;" /><label value="(Bitcoin)" /></hbox>
+	<hbox><label value="13oprsArGnC353UzRpoGE6vcTmg7fhKKuk" href="bitcoin:13oprsArGnC353UzRpoGE6vcTmg7fhKKuk?label=Redirect%20Cleaner" class="text-link" /></hbox>
+	
+</dialog>

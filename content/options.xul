@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://redirectcleaner/locale/redirectcleaner.dtd">
+
+<vbox xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<setting pref="extensions.redirectcleaner.mode" type="menulist" title="&redirectcleaner.options.mode;"><menulist><menupopup><menuitem label="&redirectcleaner.options.whitelist;" value="whitelist" /><menuitem label="&redirectcleaner.options.blacklist;" value="blacklist" /></menupopup></menulist></setting>
+	<setting pref="extensions.redirectcleaner.whitelist" type="string" title="&redirectcleaner.options.whitelist;" />
+	<setting pref="extensions.redirectcleaner.blacklist" type="string" title="&redirectcleaner.options.blacklist;" />
+	<setting pref="extensions.redirectcleaner.regexp" type="bool" title="&redirectcleaner.options.regexp;" />
+</vbox>

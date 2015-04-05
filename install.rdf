@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+<Description about="urn:mozilla:install-manifest">
+	
+	<em:id>redirectcleaner@example.org</em:id>
+	<em:name>RedirectCleaner</em:name>
+	<em:version>1.0.0</em:version>
+	<em:description>RedirectCleaner cleans Redirects from Links</em:description>
+	<em:creator>Thomas Hubbler</em:creator>
+	<em:multiprocessCompatible>true</em:multiprocessCompatible>
+	<em:bootstrap>true</em:bootstrap>
+	<em:type>2</em:type>
+	
+	<em:optionsURL>chrome://redirectcleaner/content/options.xul</em:optionsURL>
+	<em:optionsType>2</em:optionsType>
+	
+	<em:targetApplication>
+	<Description>
+		<!-- Android -->
+		<em:id>{aa3c5121-dab2-40e2-81ca-7ea25febc110}</em:id>
+		<em:minVersion>31.0</em:minVersion>
+		<em:maxVersion>39.*</em:maxVersion>
+	</Description>
+	</em:targetApplication>
+	
+	<em:targetApplication>
+	<Description>
+		<!-- Firefox -->
+		<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+		<em:minVersion>31.0</em:minVersion>
+		<em:maxVersion>39.*</em:maxVersion>
+	</Description>
+	</em:targetApplication>
+	
+	<em:targetApplication>
+	<Description>
+		<!-- SeaMonkey -->
+		<em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
+		<em:minVersion>2.28</em:minVersion>
+		<em:maxVersion>2.36.*</em:maxVersion>
+	</Description>
+	</em:targetApplication>
+	
+	<em:targetApplication>
+	<Description>
+		<!-- PaleMoon -->
+		<em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id>
+		<em:minVersion>25.0</em:minVersion>
+		<em:maxVersion>25.*</em:maxVersion>
+	</Description>
+	</em:targetApplication>
+	
+</Description>
+</RDF>
