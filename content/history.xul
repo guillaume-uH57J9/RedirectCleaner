@@ -7,7 +7,7 @@
 	id="redirectcleaner"
 	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
 	title="RedirectCleaner"
-	buttons="help"
+	buttons="help,extra1"
 	ondialogaccept=""
 	ondialogcancel=""
 	ondialoghelp="help()"
