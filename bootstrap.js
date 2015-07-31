@@ -357,14 +357,18 @@ var RedirectCleaner = {
 		
 		if(RedirectCleaner.prefs.regexp) {
 			
-			try {
-				
-				var regexp = new RegExp(RedirectCleaner.prefs.whitelist, "i");
-				if(regexp.source && regexp.test(spec)) { return true; }
-				
-			} catch(e) {
-				
-				Services.console.logStringMessage("RedirectCleaner: Error" + "\n" + e);
+			if(RedirectCleaner.prefs.whitelist != "") {
+			
+				try {
+					
+					var regexp = new RegExp(RedirectCleaner.prefs.whitelist, "i");
+					if(regexp.source && regexp.test(spec)) { return true; }
+					
+				} catch(e) {
+					
+					Services.console.logStringMessage("RedirectCleaner: Error" + "\n" + e);
+					
+				}
 				
 			}
 			
@@ -376,7 +380,7 @@ var RedirectCleaner = {
 				var items = RedirectCleaner.prefs.whitelist.split(",").sort();
 				for(var i = 0; i < items.length; i++) {
 					
-					var item = items[i];
+					var item = items[i].trim();
 					if(item && host.indexOf(item) != -1) { return true; }
 					
 				}
@@ -395,15 +399,19 @@ var RedirectCleaner = {
 		
 		if(RedirectCleaner.prefs.regexp) {
 			
-			try {
-				
-				var regexp = new RegExp(RedirectCleaner.prefs.blacklist, "i");
-				if(regexp.source && regexp.test(spec)) { return true; }
-				
-			} catch(e) {
-				
-				Services.console.logStringMessage("RedirectCleaner: Error" + "\n" + e);
-				
+			if(RedirectCleaner.prefs.blacklist != "") {
+			
+				try {
+					
+					var regexp = new RegExp(RedirectCleaner.prefs.blacklist, "i");
+					if(regexp.source && regexp.test(spec)) { return true; }
+					
+				} catch(e) {
+					
+					Services.console.logStringMessage("RedirectCleaner: Error" + "\n" + e);
+					
+				}
+			
 			}
 			
 		}
@@ -414,7 +422,7 @@ var RedirectCleaner = {
 				var items = RedirectCleaner.prefs.blacklist.split(",").sort();
 				for(var i = 0; i < items.length; i++) {
 					
-					var item = items[i];
+					var item = items[i].trim();
 					if(item && host.indexOf(item) != -1) { return true; }
 					
 				}
