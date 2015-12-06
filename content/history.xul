@@ -7,19 +7,27 @@
 	id="redirectcleaner"
 	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
 	title="RedirectCleaner"
-	buttons="help"
+	buttons="help,extra1"
 	ondialogaccept=""
 	ondialogcancel=""
 	ondialoghelp="help()"
+	buttonlabelextra1="&redirectcleaner.history.options;"
+	ondialogextra1="options()"
 	onload=""
 	style="background: white;">
 	
 	<script type="application/x-javascript">
 		<![CDATA[
+		Components.utils.import('resource://gre/modules/Services.jsm');
+		
 		function help() {
 			
 			window.openDialog("chrome://redirectcleaner/content/about.xul", "_blank", "chrome,dialog,modal,centerscreen", null);
 			
+		}
+		
+		function options() {
+			Services.wm.getMostRecentWindow('navigator:browser').BrowserOpenAddonsMgr('addons://detail/redirectcleaner@example.org/preferences');
 		}
 		]]>
 	</script>

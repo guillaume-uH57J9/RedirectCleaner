@@ -5,6 +5,7 @@
 <!ENTITY redirectcleaner.history.history "History">
 <!ENTITY redirectcleaner.history.original "Original Link">
 <!ENTITY redirectcleaner.history.clean "Clean Link">
+<!ENTITY redirectcleaner.history.options "Options">
 <!ENTITY redirectcleaner.options.mode "Mode">
 <!ENTITY redirectcleaner.options.whitelist "Whitelist">
 <!ENTITY redirectcleaner.options.blacklist "Blacklist">
